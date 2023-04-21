@@ -1,0 +1,45 @@
+// Заголовки, общие БЄМ блоки и проче...
+.page {
+  position: relative;
+  // .page__pass
+  &__pass {
+  }
+  // .page__quote
+  &__quote {
+  }
+  // .page__tips
+  &__tips {
+  }
+  // .page__try
+  &__try {
+  }
+}
+.wrapper {
+  position: relative;
+}
+.button {
+  display: flex;
+  padding: rem(13) rem(17) rem(10) rem(17);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: rem(189);
+  background: radial-gradient(50% 50% at 50% 50%, #ffc700 0%, #ffc700 100%);
+  border-radius: 20px;
+  color: #0d0c11;
+  text-transform: uppercase;
+  font-family: 'Merriweather';
+  font-size: rem(14);
+  line-height: math.div(18, 14);
+  font-weight: 700;
+  &:disabled {
+    background: #dadada;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+  }
+}
+.question-container {
+  @media (min-width: em(768)) {
+    max-width: 900px;
+  }
+}
